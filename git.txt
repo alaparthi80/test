@@ -1,0 +1,165 @@
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~
+$ git config --global user.name "alaparthi80"
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~
+$ git config --global user.email "alaparthi.aws@gmail.com"
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~
+$ ls -l
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~
+$ pwd
+/c/Users/yugandhar.alaparthi
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~
+$ pwd
+/c/Users/yugandhar.alaparthi
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~
+$ mkdir test
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~
+$ ls -la
+total 9390
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test
+$ pwd
+/c/Users/yugandhar.alaparthi/test
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test
+$ git init .
+Initialized empty Git repository in C:/Users/yugandhar.alaparthi/test/.git/
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ touch yuga.html
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ touch devops.html
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ touch azure.html
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        azure.html
+        devops.html
+        yuga.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git add azure.html
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   azure.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        devops.html
+        yuga.html
+
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git devops.html
+git: 'devops.html' is not a git command. See 'git --help'.
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git add .
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   azure.html
+        new file:   devops.html
+        new file:   yuga.html
+
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git commit -m "adding files"
+[master (root-commit) 2678d10] adding files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 azure.html
+ create mode 100644 devops.html
+ create mode 100644 yuga.html
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ ls -ltr
+total 0
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089 0 Mar 15 11:54 yuga.html
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089 0 Mar 15 11:54 devops.html
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089 0 Mar 15 11:55 azure.html
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ vi yuga.html
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   yuga.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ ls -ltr
+total 1
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089  0 Mar 15 11:54 devops.html
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089  0 Mar 15 11:55 azure.html
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089 23 Mar 15 12:12 yuga.html
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ pwd
+/c/Users/yugandhar.alaparthi/test
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git remote add origin https://github.com/alaparthi80/test.git
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (master)
+$ git branch -M main
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/alaparthi80/test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Yugandhar.Alaparthi@T10-LT-1547 MINGW64 ~/test (main)
+$ ls -ltr
+total 1
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089  0 Mar 15 11:54 devops.html
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089  0 Mar 15 11:55 azure.html
+-rw-r--r-- 1 Yugandhar.Alaparthi 1049089 23 Mar 15 12:12 yuga.html
+
+
